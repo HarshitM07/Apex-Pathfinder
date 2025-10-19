@@ -9,20 +9,41 @@
     { "id": 7, "name": "Dharamshala" },
     { "id": 8, "name": "Hamirpur" },
     { "id": 9, "name": "Bilaspur" },
-    { "id": 10, "name": "Una" }
+    { "id": 10, "name": "Una" },
+    { "id": 11, "name": "Palampur" },
+    { "id": 12, "name": "Kangra" },
+    { "id": 13, "name": "Chamba" },
+    { "id": 14, "name": "Dalhousie" },
+    { "id": 15, "name": "Nahan" },
+    { "id": 16, "name": "Paonta Sahib" },
+    { "id": 17, "name": "Kasauli" },
+    { "id": 18, "name": "Narkanda" },
+    { "id": 19, "name": "Rampur" },
+    { "id": 20, "name": "Keylong" }
   ],
   "edges": [
     { "from": 1, "to": 2, "distance": 45.0, "speed_limit": 60, "traffic": 1.8, "toll": 0.0 },
     { "from": 2, "to": 3, "distance": 70.0, "speed_limit": 80, "traffic": 2.2, "toll": 50.0 },
+    { "from": 2, "to": 17, "distance": 25.0, "speed_limit": 40, "traffic": 2.5, "toll": 10.0 },
+    { "from": 17, "to": 3, "distance": 60.0, "speed_limit": 70, "traffic": 1.9, "toll": 40.0 },
+    { "from": 1, "to": 18, "distance": 65.0, "speed_limit": 50, "traffic": 2.1, "toll": 0.0 },
+    { "from": 18, "to": 19, "distance": 65.0, "speed_limit": 45, "traffic": 2.3, "toll": 0.0 },
     { "from": 1, "to": 9, "distance": 85.0, "speed_limit": 60, "traffic": 1.5, "toll": 0.0 },
     { "from": 9, "to": 4, "distance": 75.0, "speed_limit": 50, "traffic": 2.0, "toll": 0.0 },
     { "from": 4, "to": 5, "distance": 70.0, "speed_limit": 50, "traffic": 2.5, "toll": 0.0 },
     { "from": 5, "to": 6, "distance": 40.0, "speed_limit": 40, "traffic": 3.0, "toll": 20.0 },
+    { "from": 6, "to": 20, "distance": 115.0, "speed_limit": 30, "traffic": 3.5, "toll": 100.0 },
     { "from": 9, "to": 8, "distance": 40.0, "speed_limit": 60, "traffic": 1.2, "toll": 0.0 },
-    { "from": 8, "to": 7, "distance": 75.0, "speed_limit": 60, "traffic": 1.8, "toll": 0.0 },
     { "from": 8, "to": 10, "distance": 50.0, "speed_limit": 70, "traffic": 1.1, "toll": 0.0 },
     { "from": 10, "to": 3, "distance": 110.0, "speed_limit": 80, "traffic": 1.5, "toll": 60.0 },
-    { "from": 7, "to": 4, "distance": 130.0, "speed_limit": 55, "traffic": 1.7, "toll": 0.0 }
+    { "from": 8, "to": 12, "distance": 60.0, "speed_limit": 55, "traffic": 1.9, "toll": 0.0 },
+    { "from": 12, "to": 7, "distance": 20.0, "speed_limit": 50, "traffic": 2.2, "toll": 0.0 },
+    { "from": 12, "to": 11, "distance": 35.0, "speed_limit": 50, "traffic": 1.8, "toll": 0.0 },
+    { "from": 11, "to": 4, "distance": 110.0, "speed_limit": 50, "traffic": 2.0, "toll": 0.0 },
+    { "from": 7, "to": 13, "distance": 120.0, "speed_limit": 45, "traffic": 2.5, "toll": 0.0 },
+    { "from": 13, "to": 14, "distance": 50.0, "speed_limit": 35, "traffic": 2.8, "toll": 15.0 },
+    { "from": 2, "to": 15, "distance": 90.0, "speed_limit": 60, "traffic": 1.6, "toll": 0.0 },
+    { "from": 15, "to": 16, "distance": 45.0, "speed_limit": 70, "traffic": 1.8, "toll": 30.0 }
   ]
 }
 
