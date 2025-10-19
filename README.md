@@ -1,58 +1,58 @@
-Apex Pathfinder 🗺️
+# 🗺️ Apex Pathfinder
 
-<p align="center">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Language-C%252B%252B-blue.svg" alt="Language C++">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Standard-C%252B%252B17-blue.svg" alt="Standard C++17">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT">
-</p>
+A **logic-driven C++ recommendation engine** that determines the most *optimal travel route* by balancing a user’s unique weighted priorities for ⏱️ time, 📏 distance, and 💰 cost.
 
-A sophisticated, logic-based C++ recommendation engine that calculates the most optimal city route by balancing a user's unique, weighted priorities for time, distance, and cost.
+---
 
-🚀 About The Project
+## 🚀 About The Project
 
-Apex Pathfinder moves beyond simple shortest-path algorithms. It's a C++ application that models the real-world challenge of finding the "best" route, where "best" is subjective and changes based on user preference. The engine takes these priorities, translates them into a precise mathematical model, and uses Dijkstra's algorithm to find the path that best matches the user's needs.
+Apex Pathfinder goes beyond simple shortest-path algorithms — it adapts to *what “best” means for you*. The engine calculates an **optimal route** by combining user preferences into a precise mathematical model, leveraging **Dijkstra’s Algorithm** enhanced with a **Weighted Sum Model** to handle real-world trade-offs between time, distance, and cost.
 
-This project was built from the ground up to demonstrate a deep understanding of:
+It demonstrates a deep understanding of:
+- **Algorithmic Design:** Implementing Dijkstra’s algorithm in a multi-factor optimization environment.  
+- **Problem Modeling:** Translating human preferences into a weighted mathematical model through data normalization.  
+- **C++ Development:** Building a modular, efficient, and fully self-contained command-line application.  
+- **Data Handling:** Parsing structured data from JSON and building an in-memory graph representation.  
 
-Algorithmic Design: Implementing Dijkstra's algorithm in a complex, multi-factor environment.
+---
 
-Problem Modeling: Translating user preferences into a unified, weighted score through data normalization.
+## ⚙️ Technologies & Algorithms Used
 
-C++ Development: Building a robust, self-contained, and efficient command-line application.
+- **Language:** C++ (C++17)  
+- **Algorithm:** Dijkstra’s Algorithm  
+- **Optimization Technique:** Weighted Sum Model  
+- **Data Structures:** Adjacency List (`std::map`), Min-Priority Queue  
+- **Data Format:** JSON (using [nlohmann/json](https://github.com/nlohmann/json))
 
-Data Handling: Parsing structured data from JSON to build an in-memory graph representation.
+---
 
-🛠️ Technologies & Algorithms Used
+## 🧩 System Overview
 
-Core Language: C++ (using the C++17 standard)
+```mermaid
+flowchart TD
+A[User Input: Time, Distance, Cost Weights] --> B[Data Normalization]
+B --> C[Weighted Score Calculation]
+C --> D[Dijkstra's Algorithm]
+D --> E[Optimal Path Found]
+E --> F[Results Displayed in CLI]
+```
 
-Core Algorithm: Dijkstra's Algorithm
+## 🛠️ How To Run
+**Prerequisites**
 
-Optimization Technique: Weighted Sum Model
+A C++ compiler supporting C++17 (e.g., `g++`)
 
-Key Data Structures: Adjacency List (using std::map), Min-Priority Queue
+`json.hpp` from nlohmann/json
+ placed in the project root
 
-Data Format: JSON
-
-🏃 How To Run
-
-Prerequisites
-
-Before you begin, ensure you have the following:
-
-A C++ compiler that supports C++17 (like g++).
-
-The json.hpp file from Niels Lohmann's JSON library placed in the root of the project.
-
-Compilation
-
-Navigate to the project directory and compile the program using the following command:
-
+**Compilation**
+```bash
 g++ route_planner.cpp -o route_planner -std=c++17
-
-
-Execution
-
-Run the compiled executable from your terminal:
-
+```
+**Execution**
+```bash
 ./route_planner
+```
+## 🤝 Contributions
+
+Contributions are welcome — feel free to open a pull request or share suggestions!
